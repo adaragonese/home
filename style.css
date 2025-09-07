@@ -1,33 +1,36 @@
-/* Stile base per il sito */
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
   background: #f4f4f4;
   color: #333;
 }
 
 header {
-  background: #333;
+  background: #2c3e50;
   color: #fff;
-  padding: 1rem;
   text-align: center;
+  padding: 2rem 1rem;
 }
 
 header h1 {
   margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
 }
 
 nav {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 nav a {
   color: #fff;
-  text-decoration: none;
   margin: 0 1rem;
+  text-decoration: none;
 }
 
 nav a:hover {
@@ -45,10 +48,32 @@ section {
   border-radius: 8px;
 }
 
+h2 {
+  color: #2c3e50;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
 footer {
+  background: #2c3e50;
+  color: #fff;
   text-align: center;
   padding: 1rem;
-  background: #222;
-  color: #fff;
   margin-top: 2rem;
 }
