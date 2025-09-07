@@ -18,6 +18,12 @@ header h1 {
   font-size: 2rem;
 }
 
+.logo {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
 nav {
   margin-top: 1rem;
 }
